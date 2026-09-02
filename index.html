@@ -1,16 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Site</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #333; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caoilinn Hughes — Software Engineer</title>
+<meta name="description" content="Caoilinn Hughes, software engineer at Skyscanner working on Android and iOS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to caoilinn.me. My new website is officially up and running!</p>
+
+<div class="shell">
+  <header class="topbar">
+    <a class="mark" href="index.html">CAOILINN HUGHES<span> / mobile eng.</span></a>
+    <nav aria-label="Primary">
+      <ul class="gates">
+        <li><a href="index.html" aria-current="page"><span class="gate-no">01</span>PROFILE</a></li>
+        <li><a href="work.html"><span class="gate-no">02</span>WORK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="board" role="img" aria-label="Departure board: Caoilinn Hughes, Software Engineer, Skyscanner, Android to iOS, status boarding">
+      <div class="board-head">
+        <span>NOW BOARDING</span>
+        <span class="blink">● LIVE</span>
+      </div>
+      <div class="flap-row">
+        <span class="flap-label">NAME</span>
+        <span class="flap-value" data-flap="CAOILINN HUGHES"></span>
+      </div>
+      <div class="flap-row">
+        <span class="flap-label">ROLE</span>
+        <span class="flap-value" data-flap="SOFTWARE ENGINEER"></span>
+      </div>
+      <div class="flap-row">
+        <span class="flap-label">CARRIER</span>
+        <span class="flap-value" data-flap="SKYSCANNER"></span>
+      </div>
+      <div class="flap-row">
+        <span class="flap-label">PLATFORM</span>
+        <span class="flap-value" data-flap="ANDROID -&gt; IOS"></span>
+      </div>
+      <div class="flap-row">
+        <span class="flap-label">STATUS</span>
+        <span class="flap-value" data-flap="BOARDING"></span>
+      </div>
+    </div>
+
+    <section class="block two-col">
+      <div>
+        <h2>ABOUT</h2>
+        <p>
+          I'm a software engineer at Skyscanner, where I build the Android app
+          that helps people find and book flights. I spent the last while deep
+          in Kotlin, Jetpack, and the small details that make a mobile search
+          experience feel instant — and I've recently started picking up iOS
+          and Swift, moving toward working across both platforms.
+        </p>
+        <p>
+          I like the parts of mobile engineering that are easy to overlook:
+          app startup time, state restoration, the moment a screen has to
+          reflow because a network call came back slower than expected. Good
+          travel software should feel calm even when the underlying systems
+          are anything but.
+        </p>
+      </div>
+      <div>
+        <h2>CURRENTLY</h2>
+        <ul class="now-list">
+          <li>Shipping features for the Skyscanner Android app</li>
+          <li>Ramping up on iOS and Swift</li>
+          <li>Learning what it takes to write code once for both platforms</li>
+          <li>Based in the UK</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>GET IN TOUCH</h2>
+      <p style="margin-bottom: 18px;">Always happy to talk mobile engineering, Android internals, or the move to iOS.</p>
+      <div class="contact-strip">
+        <a href="mailto:caoilinn.hughes@example.com">EMAIL</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GITHUB</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LINKEDIN</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitefoot">
+    <span>© 2026 Caoilinn Hughes</span>
+    <a href="work.html">See the work board →</a>
+  </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
