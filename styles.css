@@ -310,6 +310,29 @@ section.block:last-of-type { border-bottom: none; }
   max-width: 52ch;
 }
 
+.schedule-row .dest ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  max-width: 54ch;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.schedule-row .dest ul li { margin-bottom: 5px; }
+
+.skill-group + .skill-group { margin-top: 16px; }
+
+.skill-group h3 {
+  font-family: var(--font-board);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin: 0 0 6px;
+  font-weight: 400;
+}
+
+.skill-group p { margin: 0; }
+
 .schedule-row .when {
   font-family: var(--font-board);
   font-size: 13px;
