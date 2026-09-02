@@ -126,11 +126,28 @@ footer.sitefoot a { text-decoration: underline; text-underline-offset: 3px; }
 /* ---------- departure board ---------- */
 
 .board {
+  position: relative; 
   background: var(--board);
   border-radius: 6px;
   padding: 28px 24px 20px;
   margin: 36px 0 8px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.06) inset, 0 20px 40px -28px rgba(18,20,28,0.55);
+}
+
+.board-photo {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid var(--flap-amber);
+  background: var(--board-line);
+}
+
+@media (max-width: 620px) {
+  .board-photo { width: 44px; height: 44px; top: 16px; right: 16px; }
 }
 
 .board-head {
